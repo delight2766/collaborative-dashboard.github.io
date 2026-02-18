@@ -1,0 +1,49 @@
+<DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF_8">
+      <title>Collaborative Project DAshboard</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <header>
+        <h1>Collaborative Project Dashboard</h1>
+      </header>
+
+      <section class="dashboard">
+
+        <div class="task-election">
+          <h2>Project Tasks</h2>
+
+          <div class="input-group">
+            <input type="text" id="taskinput" placeholder="Enter new task">
+
+            <select id="memberSelect">
+              <option value="">Assign Member</option>
+              <option>Angel</option>
+              <option>Delight</option>
+              <option>Success</option>
+              <option>Confidence</option>
+              <option>JOy</option>
+              <option>Franklin</option>
+            </select>
+
+            <button onclick="addTask()">Add</button>
+          </div>
+
+          <ul id="taskList"></ul>
+        </div>
+
+        <div class=""Process-section">
+          <h2>Project Process</h2>
+          <div class="progress-bar">
+            <div id="progressFill"></div>
+          </div>
+          <p id="progressText">0% Completed</p>
+        </div>
+
+      </section>
+
+      <script src="script.js"></script>
+    </body>
+  </html>
